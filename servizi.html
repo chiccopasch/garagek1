@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage K1 - I Nostri Servizi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GARAGE K1</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="storia.html">La Storia</a>
+            <a href="servizi.html" class="active">I Nostri Servizi</a>
+        </div>
+    </nav>
+
+    <header class="bgimage-section" style="background-image: url(https://images.unsplash.com/photo-1650569663281-44a28c984e2a?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);">
+        <div class="bgimage-overlay">
+            <div class="bgimage-content">
+                <h1 style="color: #FF2A2A; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); font-size: 5rem;">
+                    I NOSTRI SERVIZI
+                </h1>
+                <p>Dalla meccanica di precisione alla verniciatura, curiamo ogni dettaglio.</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="info-section light-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Cosa Facciamo</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="grid">
+                <div class="col">
+                    <figure class="foto-interattiva">
+                        <img src="https://live.staticflickr.com/7100/7192011160_2f422ba55d_k.jpg" alt="Riassemblaggio carter motore" onclick="mostraDidascalia(this)"> 
+                        <figcaption class="didascalia-nascosta">
+                            <strong>Dettaglio:</strong> Chiusura carter motore.<br>
+                            <em>Foto di <a href="https://www.flickr.com/photos/zachz/" target="_blank">Zach</a> / <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank"> CC BY-NC-ND 2.0</a></em>
+                        </figcaption>
+                    </figure>
+                    <h3>Meccanica di Precisione</h3>
+                    <p>Smontaggio completo, sabbiatura e lucidatura dei carter. Sostituiamo cuscinetti e paraoli per garantire una perfetta tenuta e affidabilità del motore.</p>
+                </div>
+                <div class="col">
+                    <figure class="foto-interattiva">
+                        <img src="img/chassis.jpeg" alt="Telaio moto verniciato a polvere nera" onclick="mostraDidascalia(this)">
+                        <figcaption class="didascalia-nascosta">
+                            <strong>Dettaglio:</strong> Telaio verniciato a polvere.<br>
+                            <em>Foto d'archivio personale / Riproduzione riservata</em>
+                        </figcaption>
+                    </figure>
+                    <h3>Verniciatura Telai</h3>
+                    <p>Sverniciatura e sabbiatura strutturale. Applichiamo trattamenti anticorrosivi e verniciatura a polvere nero lucido per ripristinare il telaio alle condizioni originali di fabbrica.</p>
+                </div>
+                <div class="col">
+                    <figure class="foto-interattiva">
+                        <img src="https://images.unsplash.com/photo-1777042510267-2c0543a0d715?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Connettori impianto elettrico" onclick="mostraDidascalia(this)">
+                        <figcaption class="didascalia-nascosta">
+                            <strong>Dettaglio:</strong> Revisione cavi.<br>
+                            <em>Foto di <a href="https://unsplash.com/@thecurlyone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">C</a> / <a href="https://unsplash.com/license" target="_blank"> Unsplash</a></em>
+                        </figcaption>
+                    </figure>
+                    <h3>Impianti Elettrici</h3>
+                    <p>Ricostruzione completa dei cablaggi. Sostituzione di connettori ossidati, test di continuità sui componenti e ripristino dell'impianto di illuminazione e ricarica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section dark-bg">
+        <div class="container text-center">
+            <h2>La Nostra Filosofia</h2>
+            <div class="divider center-divider"></div>
+            <p class="large-text">
+                Non ci limitiamo a riparare. Noi restauriamo conservando l'anima originale del veicolo. Utilizziamo manuali d'officina dell'epoca, ricambi originali (NOS) e tecniche artigianali per garantire che la tua Honda CB500 Four torni esattamente come quando è uscita dalla fabbrica nel 1972.
+            </p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <h2>GARAGE K1</h2>
+            <p>Via Honda, 14 - Trieste</p>
+        </div>
+    </footer>
+
+    <script>
+        function mostraDidascalia(elementoImmagine) {
+            var didascalia = elementoImmagine.nextElementSibling;
+            
+            if (didascalia.classList.contains('didascalia-visibile')) {
+                didascalia.classList.remove('didascalia-visibile');
+            } else {
+                didascalia.classList.add('didascalia-visibile');
+            }
+        }
+    </script>
+</body>
+</html>

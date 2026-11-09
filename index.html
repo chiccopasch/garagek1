@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage K1 - Restauro Auto e Moto d'Epoca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GARAGE K1</div>
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="storia.html">La Storia</a>
+            <a href="servizi.html">I Nostri Servizi</a>
+        </div>
+    </nav>
+
+    <header class="bgimage-section" 
+    style="background-image: url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="bgimage-overlay">
+            <div class="bgimage-content">
+                <h1 style="color: #FF2A2A; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); font-size: 5rem;">
+                    RESTAURO SENZA COMPROMESSI
+                </h1>
+                <p>Specialisti nel riportare in vita la meccanica degli anni '70.</p>
+                <a href="#progetti" class="btn">Scopri i Progetti</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="progetti" class="gallery-section light-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>I Nostri Lavori Recenti</h2>
+                <div class="divider"></div>
+                
+                <p class="avviso-crediti">
+                    <strong>Nota interattiva:</strong> Clicca o tocca le immagini qui sotto per scoprire i dettagli tecnici dell'intervento e visualizzare i crediti fotografici!
+                </p>
+
+            </div>
+            <div class="grid">
+                <div class="col">
+                    <figure class="foto-interattiva">
+                        <img src="img/new_bike.jpg" alt="Honda CB500 Four su strada alpina" onclick="mostraDidascalia(this)">
+                        <figcaption class="didascalia-nascosta">
+                            <em>Foto d'archivio personale / Riproduzione riservata</em>
+                        </figcaption>
+                    </figure>
+                    <h3>Test su Strada:</h3>
+                    <p>Dopo il collaudo finale, la CB500 Four affronta con grinta le curve di montagna. L'erogazione è tornata fluida e la tenuta di strada è impeccabile grazie alle forcelle revisionate.</p>
+                </div>
+                <div class="col"> 
+                    <figure class="foto-interattiva">
+                        <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/88cf4d22645eb6409c0170b3961a7110.jpg/960px-88cf4d22645eb6409c0170b3961a7110.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Honda CB500 Four in esposizione" onclick="mostraDidascalia(this)">
+                        <figcaption class="didascalia-nascosta">
+                            <em>Foto di <a href="https://commons.wikimedia.org/wiki/User:Contrometropoli" target="_blank">Contrometropoli</a> / <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a></em>
+                        </figcaption>
+                    </figure>
+                    <h3>Dettagli Originali:</h3> 
+                    <p>Conservazione maniacale della verniciatura originale e lucidatura a specchio dei quattro inconfondibili terminali di scarico, vero simbolo dell'epoca d'oro Honda.</p>
+                        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-section dark-bg">
+        <div class="container text-center">
+            <h2>"Ogni singola vite racconta una storia. Noi la ascoltiamo."</h2>
+            <div class="divider center-divider"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>GARAGE K1</h2>
+            <p>Via Honda, 14 - Trieste</p>
+        </div>
+    </footer>
+
+    <script>
+        function mostraDidascalia(elementoImmagine) {
+            var didascalia = elementoImmagine.nextElementSibling;
+            
+            if (didascalia.classList.contains('didascalia-visibile')) {
+                didascalia.classList.remove('didascalia-visibile');
+            } else {
+                didascalia.classList.add('didascalia-visibile');
+            }
+        }
+    </script>
+</body>
+</html>

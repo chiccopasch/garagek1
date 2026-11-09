@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage K1 - La Storia del Restauro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GARAGE K1</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="storia.html" class="active">La Storia</a>
+            <a href="servizi.html">I Nostri Servizi</a>
+        </div>
+    </nav>
+
+    <header class="bgimage-section" style="background-image: url(https://images.unsplash.com/photo-1599256630445-67b5772b1204?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D);">
+        <div class="bgimage-overlay">
+            <div class="bgimage-content">
+                <h1 style="color: #FF2A2A; text-shadow: 3px 3px 6px rgba(0,0,0,0.8); font-size: 5rem;">
+                    IL PROGETTO CB500
+                </h1>
+                <p>Dall'abbandono al ritorno in strada: le fasi del nostro restauro.</p>
+            </div>
+        </div>
+    </header>
+
+    <section id="progetti" class="gallery-section light-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Le tappe del restauro</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="gallery-list">
+                
+                <div class="row">
+                    <figure class="foto-interattiva">
+                        <img src="img/old_bike.jpg" alt="Honda CB500 impolverata e arrugginita in garage" onclick="mostraDidascalia(this)">
+                        <figcaption class="didascalia-nascosta">
+                            <strong>Fase 1:</strong> Il ritrovamento.<br>
+                            <em>Foto d'archivio personale / Riproduzione riservata</em>
+                        </figcaption>
+                    </figure>
+                    <div class="row-text">
+                        <h3>Il Ritrovamento</h3>
+                        <p>Il progetto è iniziato con il recupero di questa CB500 Four, ferma da decenni in un deposito. Sella consumata, vernice rovinata e molta ruggine superficiale: una base di partenza che richiedeva un lavoro di smontaggio totale.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="row-text">
+                        <h3>Lavorazioni sul Blocco</h3>
+                        <p>Il cuore della moto è stato completamente ispezionato. Abbiamo provveduto allo sblocco dei pistoni grippati utilizzando speciali miscele penetranti, seguito da un'accurata pulizia delle alette di raffreddamento e lucidatura dei carter esterni in alluminio.</p>
+                    </div>
+                    <figure class="foto-interattiva">
+                        <img src="img/engine.jpg" alt="Dettaglio carter motore Honda in alluminio lucidato" onclick="mostraDidascalia(this)">
+                        <figcaption class="didascalia-nascosta">
+                            <strong>Fase 2:</strong> Restauro gruppo termico e carter.<br>
+                            <em>Foto d'archivio personale / Riproduzione riservata</em>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="row"> 
+                    <figure class="foto-interattiva">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Honda_CB_500_Four_%288007131635%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Honda CB 500 Four restaurata in parcheggio" onclick="mostraDidascalia(this)">
+                        <figcaption class="didascalia-nascosta">
+                            <strong>Risultato Finale:</strong> Honda 500 Four pronta all'uso.<br>
+                            <em>Foto di <a href="https://www.flickr.com/photos/photobeppus/" target="_blank">photobeppus</a> / <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en" target="_blank">CC BY-SA 2.0</a></em>
+                        </figcaption>
+                    </figure>
+                    <div class="row-text">
+                        <h3>Su Strada</h3>
+                        <p>Dopo mesi di lavoro meticoloso su ciclistica, motore e impianto elettrico, la moto è tornata alle sue condizioni ottimali. Il fascino dei quattro scarichi separati e la fluidità del motore garantiscono nuovamente le emozioni degli anni '70.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>GARAGE K1</h2>
+            <p>Via Honda, 14 - Trieste</p>
+        </div>
+    </footer>
+
+    <script>
+        function mostraDidascalia(elementoImmagine) {
+            var didascalia = elementoImmagine.nextElementSibling;
+            
+            if (didascalia.classList.contains('didascalia-visibile')) {
+                didascalia.classList.remove('didascalia-visibile');
+            } else {
+                didascalia.classList.add('didascalia-visibile');
+            }
+        }
+    </script>
+</body>
+</html>
